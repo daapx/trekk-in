@@ -1,0 +1,27 @@
+.hero-section{
+    margin-top: 10vh;
+    position: relative;
+    .hero-section__alpinist{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-section__alpinist-container{
+        width: 120vw;
+        height: auto;
+        position: relative;
+        left: -20vw;
+    }
+
+    @media screen and (min-width: $viewport-medium) {
+        .hero-section__alpinist-container{
+            width: 100%;
+            left: 0;
+        }
+
+        .hero-section__alpinist{
+            position: relative;
+            top: -15vh;
+        }
+    }
+}

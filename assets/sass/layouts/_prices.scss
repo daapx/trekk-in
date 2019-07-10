@@ -1,0 +1,26 @@
+.prices{
+    background-image: url(../images/bg-price.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .prices__title{
+        padding-top: 10vh;
+        color: $white;
+        text-align: center;
+        @media screen and (min-width: $viewport-large) {
+            padding-top: 200px;;
+        }
+    }
+
+    .prices__card-container{
+        background-color: $onyx;
+    }
+
+    @media screen and (min-width: $viewport-medium) {
+        background-size: cover;
+        
+        .prices__card-container{
+            background-color: transparent;
+        }
+    }
+}

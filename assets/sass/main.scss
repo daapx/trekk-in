@@ -1,0 +1,17 @@
+@import 'vendors/normalize-8.0.1/normalize.scss';
+
+@import 'abstracts/variables';
+
+@import 'base/resets';
+@import 'base/typhography';
+@import 'base/base';
+@import 'base/grid';
+
+@import 'layouts/hero-section';
+@import 'layouts/characteristics';
+@import 'layouts/prices';
+@import 'layouts/footer';
+
+@import 'components/buttons';
+@import 'components/nav';
+@import 'components/card';

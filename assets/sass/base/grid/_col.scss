@@ -1,0 +1,69 @@
+@mixin set-col{
+    padding: 5px;    
+}
+
+@mixin set-column {
+    @for $i from 1 through 12 {
+        .col-#{$i}{
+            grid-column: span #{$i};
+            @include set-col();
+        }
+    }
+}
+
+@mixin set-column-sm {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i}{
+            grid-column: span #{$i};
+            @include set-col();
+        }
+    }
+}
+
+@mixin set-column-md {
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            grid-column: span #{$i};
+            @include set-col();
+        }
+    }
+}
+
+@mixin set-column-lg {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            grid-column: span #{$i};
+            @include set-col();
+        }
+    }
+}
+
+@mixin set-column-xl {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i}{
+            grid-column: span #{$i};
+            @include set-col();
+        }
+    }
+}
+.container, .container-fluid{
+    .row{
+        @include set-column();
+
+        @media screen and (min-width: $viewport-small) {
+            @include set-column-sm();
+        }
+
+        @media screen and (min-width: $viewport-medium) {
+            @include set-column-md();
+        }
+
+        @media screen and (min-width: $viewport-large) {
+            @include set-column-lg();
+        }
+
+        @media screen and (min-width: $viewport-xlarge) {
+            @include set-column-xl();
+        }
+    }
+}

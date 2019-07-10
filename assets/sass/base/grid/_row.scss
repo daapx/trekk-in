@@ -1,0 +1,7 @@
+.container, .container-fluid {
+    .row{
+        display: grid;
+        grid-template-columns: repeat($number-columns, 1fr);
+        grid-gap: 10px;
+    }
+}
