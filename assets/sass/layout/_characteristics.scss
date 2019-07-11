@@ -1,0 +1,24 @@
+.characteristics{
+
+    .characteristics__title{
+        text-align: center;
+    }
+
+    .characteristics__graph{
+        animation-name: aparecer;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+    
+    @keyframes aparecer{
+        0%{
+         opacity: 0;
+        }
+    
+        100%{
+            opacity: 1;
+        }
+    }
+}

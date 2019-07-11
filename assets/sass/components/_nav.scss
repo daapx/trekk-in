@@ -11,10 +11,47 @@ nav{
     }
 
     .nav__buttons{
-        text-align: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 
     .nav__buttons > button:not(.nav__burger){
         display: none;
+    }
+
+    .nav__left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;       
+    }
+
+    @media screen and (min-width: $viewport-medium) {
+        height: 15vh;
+
+        .nav__buttons > button:not(.nav__burger){
+            display: inline-block;
+        }
+
+        .nav__buttons > button.nav__burger{
+            display: none;
+        }
+
+        .nav__list{
+            display: inline;
+            margin: 0;
+            list-style: none;
+        }
+
+        .nav__list li{
+            display: inline-block;
+            margin-left: 1rem;
+        }
+
+        .nav__list a{
+            color: $raising-black;
+            text-decoration: none;
+        }
     }
 }

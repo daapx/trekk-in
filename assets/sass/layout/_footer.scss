@@ -1,0 +1,27 @@
+footer{
+    font-family: $raleway;
+    text-align: center;
+    background-color: $raising-black;
+    color: $white;
+    font-size: $small;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    
+    .footer__link {
+        color: $white;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    @media screen and (min-width: $viewport-medium) {
+        .footer__left{
+            text-align: left;
+        }
+
+        .footer__right{
+            text-align: right;
+        }
+    }
+}

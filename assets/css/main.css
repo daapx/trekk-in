@@ -631,6 +631,9 @@ body {
   left: -20vw;
 }
 @media screen and (min-width: 768px) {
+  .hero-section {
+    margin-top: 15vh;
+  }
   .hero-section .hero-section__alpinist-container {
     width: 100%;
     left: 0;
@@ -643,6 +646,21 @@ body {
 
 .characteristics .characteristics__title {
   text-align: center;
+}
+.characteristics .characteristics__graph {
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .prices {
@@ -672,6 +690,67 @@ body {
   }
 }
 
+footer {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-color: #221d23;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer .footer__link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__left {
+    text-align: left;
+  }
+  footer .footer__right {
+    text-align: right;
+  }
+}
+
+.btn {
+  background-color: #2ab7ca;
+  border: 1px solid #2ab7ca;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5em;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.btn:focus {
+  background-color: #c7c8cc;
+  border: 1px solid #c7c8cc;
+}
+
+.btn:hover {
+  background-color: #77d1dd;
+  border: 1px solid #77d1dd;
+}
+
+.btn--transparent {
+  background-color: unset;
+  border: 1px solid transparent;
+  color: #221d23;
+  font-weight: 400;
+}
+
+.btn--transparent:hover {
+  background-color: unset;
+  border: 1px solid #221d23;
+  color: #221d23;
+}
+
+.btn--large {
+  padding: 1em 3em;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -684,10 +763,53 @@ nav .nav__list {
   display: none;
 }
 nav .nav__buttons {
-  text-align: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 nav .nav__buttons > button:not(.nav__burger) {
   display: none;
+}
+nav .nav__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    height: 15vh;
+  }
+  nav .nav__buttons > button:not(.nav__burger) {
+    display: inline-block;
+  }
+  nav .nav__buttons > button.nav__burger {
+    display: none;
+  }
+  nav .nav__list {
+    display: inline;
+    margin: 0;
+    list-style: none;
+  }
+  nav .nav__list li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  nav .nav__list a {
+    color: #221d23;
+    text-decoration: none;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  padding: 30px;
+}
+.card .card__body {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

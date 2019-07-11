@@ -1,0 +1,36 @@
+.btn{
+    background-color: $ball-blue;
+    border: 1px solid $ball-blue;
+    color: $white;
+    font-weight: $bold;
+    padding: .5em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn:focus{
+    background-color: $lavender-gray;
+    border: 1px solid $lavender-gray;
+}
+
+.btn:hover{
+    background-color: $middle-blue;
+    border: 1px solid $middle-blue;
+}
+
+.btn--transparent{
+    background-color: unset;
+    border: 1px solid transparent;
+    color: $raising-black;
+    font-weight: $regular;
+}
+
+.btn--transparent:hover{
+    background-color: unset;
+    border: 1px solid $raising-black;
+    color: $raising-black;
+}
+
+.btn--large{
+    padding: 1em 3em;
+}
