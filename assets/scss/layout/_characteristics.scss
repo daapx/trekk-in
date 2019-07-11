@@ -11,14 +11,4 @@
         animation-iteration-count: 1;
         animation-direction: alternate;
     }
-    
-    @keyframes aparecer{
-        0%{
-         opacity: 0;
-        }
-    
-        100%{
-            opacity: 1;
-        }
-    }
 }

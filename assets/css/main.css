@@ -350,6 +350,14 @@ body {
   color: #221d23;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container {
   padding: 5px;
   width: 90vw;
@@ -653,14 +661,6 @@ body {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-direction: alternate;
-}
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .prices {
