@@ -348,6 +348,7 @@ template {
 body {
   background-color: #fff;
   color: #221d23;
+  font-size: 16px;
 }
 
 @keyframes aparecer {
@@ -372,7 +373,7 @@ body {
 .container .row, .container-fluid .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1rem;
 }
 
 .container .row .col-1, .container-fluid .row .col-1 {
@@ -656,11 +657,7 @@ body {
   text-align: center;
 }
 .characteristics .characteristics__graph {
-  animation-name: aparecer;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
+  animation: aparecer 3s ease-in-out 1s 1;
 }
 
 .prices {
